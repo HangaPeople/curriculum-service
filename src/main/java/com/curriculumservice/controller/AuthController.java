@@ -5,17 +5,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/user")
-public class CurrController {
+@RequestMapping("/auth/user")
+public class AuthController {
 
     @GetMapping("/signup")
     public String signup() {
-        return "user 회원가입";
+        return "auth 회원가입";
     }
 
     @GetMapping("/login")
     public String login() {
-        return "user 로그인";
+        return "auth 로그인";
     }
-
 }
