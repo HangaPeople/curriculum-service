@@ -1,13 +1,14 @@
 spring:
   datasource:
-    url: jdbc:mysql://hangpeople.ct0aldghezwb.ap-northeast-2.rds.amazonaws.com:3306/testSchema
-    username: admin
-    password: chldudtlrrytnsladmsdnleogkek
+    url: jdbc:mysql://localhost:3306/curr-test
+#    url: jdbc:mysql://hangpeople.ct0aldghezwb.ap-northeast-2.rds.amazonaws.com:3306/testSchema
+    username: root
+    password: ehdgus77
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     defer-datasource-initialization: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     database: mysql
     properties:
       hibernate:
