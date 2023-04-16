@@ -21,13 +21,13 @@ public class CurrController {
         return ResponseEntity.ok(curriculums);
     }
 
-    @PostMapping("/")
+    @PostMapping
     public ResponseEntity<CurriculumDto> createCurriculum(@RequestBody CurriculumDto curriculumDto) {
         CurriculumDto createdCurriculum = currService.createCurriculum(curriculumDto);
         return ResponseEntity.ok(createdCurriculum);
     }
 
-    @PutMapping("/")
+    @PutMapping
     public ResponseEntity<CurriculumDto> updateCurriculum(@RequestBody CurriculumDto curriculumDto) {
         CurriculumDto updatedCurriculum = currService.updateCurriculum(curriculumDto);
         return ResponseEntity.ok(updatedCurriculum);
